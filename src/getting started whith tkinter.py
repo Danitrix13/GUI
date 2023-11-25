@@ -31,15 +31,20 @@ window.title(string="Demo")
 window.geometry(newGeometry="300x150")
 
 # title
-title_label: object = ttk.Label(master=window,text="Miles to kilometers",font=("Fira Code",15,"bold"))
+title_label: object = ttk.Label(master=window,
+text="Miles to kilometers",
+font=("Fira Code",15,"bold"))
 title_label.pack()
 
 # entrada de datos
 input_frame: object = ttk.Frame(master=window)
 entry_Int: object = tk.IntVar(master=window)
-entry = ttk.Entry(master=input_frame,textvariable=entry_Int)
-button = ttk.Button(master=input_frame,text="Convertir",command=convertir)
-entry.pack(side="left",padx=10)
+entry = ttk.Entry(master=input_frame,
+textvariable=entry_Int)
+button = ttk.Button(master=input_frame,
+text="Convertir",command=convertir)
+entry.pack(side="left",
+padx=10)
 button.pack(side="left")
 input_frame.pack(pady=10)
 
@@ -51,4 +56,4 @@ font=("Fira Code",15,"bold"),
 textvariable=output_string).pack(pady=5)
 # ejecutar
 window.mainloop()
-#14:40
+#21:31
